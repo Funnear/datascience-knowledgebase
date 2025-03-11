@@ -9,3 +9,27 @@
 - LaTeX for formulas in Jupyter Notebooks:
   - https://en.wikibooks.org/wiki/LaTeX
 
+## Template for code blocks
+```bash
+template code block
+```
+
+## Template for tables
+
+| col1 | col2 | col3 |
+| ---- | ---- | ---- |
+| row1 | row1 | row1 |
+|      |      |      |
+
+## LaTeX references
+
+```
+\begin{equation}
+  \forall x \in X, \quad \exists y \leq \epsilon
+\end{equation}
+```
+
+### Greek letters
+```
+$ \alpha, \Alpha, \beta, \Beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \mu, \Phi $
+```
