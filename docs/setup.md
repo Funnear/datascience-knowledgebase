@@ -26,6 +26,8 @@ TODO
 
 ### Configure using the same environment for Jupyter Notebooks
 
+Preconditions: install dependencies first (see package management), including `ipykernel`!
+
 After running this comand in terminal:
 ```bash
 python -m ipykernel install --user --name=venv --display-name "Python (venv)"
@@ -126,7 +128,13 @@ git submodule add https://github.com/user_name/project_name.git libs/project_nam
 git submodule update --init --recursive
 ```
 
+Install as local package in activated venv:
+```bash
+pip install -e ./libs/project_name
+```
+
 To import submodule  add and run this code from inside a python script or a Jupyter notebook:
+
 ```python
 import sys
 import os
@@ -152,6 +160,13 @@ import submodule_package_name.module_name as utils
 Do this to sync the changes to the original repo of the submodule:
 ```bash
 git submodule update --remote --merge
+```
+
+#### Remove submodule
+```bash
+git rm --cached libs/package_name
+rm -rf .git/modules/libs/package_name
+git commit -m "Removed submodule"
 ```
 
 ----------------------------------------
