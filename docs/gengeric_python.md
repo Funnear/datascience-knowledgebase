@@ -23,3 +23,11 @@ logging.getLogger().setLevel(logging.ERROR)
 
 logging.getLogger().setLevel(logging.DEBUG)
 ```
+
+
+## Formatting strings
+
+To print a float value in readable procents:
+```python
+print(f"{probability:.2%}")
+```
