@@ -61,12 +61,16 @@ Sample requirement.txt contents for data science project:
 jupyterlab>=4.3.5
 ipykernel>=6.29.5
 pandas>=2.2.2
-kagglehub>=0.3.10
 numpy>=1.26.4
+
 matplotlib>=3.9.2
 seaborn>=0.13.2
 matplotlib-venn>=1.1.2
 statsmodels>=0.14.4
+
+scikit-learn>=1.6.1
+
+kagglehub>=0.3.10
 ```
 
 ```bash
